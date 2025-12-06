@@ -4,8 +4,10 @@ import matplotlib.pyplot as plt
 from mtcnn.mtcnn import MTCNN
 from time import time
 
+#Este es el codelab original sin modificaciones
+
 # Carga imagen (sube archivos en Colab o usa una URL y descárgala)
-img = cv2.imread('grupo4.jpg')  # reemplaza por tu archivo
+img = cv2.imread('grupo3.jpg')  # reemplaza por tu archivo
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 if img is None:

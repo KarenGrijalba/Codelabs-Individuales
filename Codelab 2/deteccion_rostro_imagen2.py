@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 from mtcnn.mtcnn import MTCNN
 from time import time
 
+#Este codelab tiene los cambios que se pedian en el punto 7.6
+
 # Lista de imágenes (ajusta rutas según tus archivos)
 imagenes = {
     "Una persona": "grupo.jpg",

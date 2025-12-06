@@ -1,6 +1,9 @@
 import cv2, dlib, time
 
+# Codelab 3 - original
+
 detector = dlib.get_frontal_face_detector()
+"""
 cap = cv2.VideoCapture('video.mp4')  # sube tu video corto
 
 prev = time.time(); frames=0
@@ -18,9 +21,11 @@ while True:
         cv2.putText(frame, f"FPS: {fps:.1f}", (10,30),
                     cv2.FONT_HERSHEY_SIMPLEX, 1,(0,255,0),2)
     # Mostrar frame en notebook (en local usa imshow)
-    _, buf = cv2.imencode('.jpg', frame)
+    cv2.imshow("Dlib HOG Detector", frame)
     # en Colab podrías guardar frames si quieres
 cap.release()
+"""
+
 
 cap = cv2.VideoCapture(0)
 while True:
@@ -33,4 +38,8 @@ while True:
         cv2.rectangle(frame, (x,y), (x+w,y+h), (0,255,0), 2)
     cv2.imshow("dlib HOG", frame)
     if cv2.waitKey(1) & 0xFF==27: break
-cap.release(); cv2.destroyAllWindows()
+    
+cap.release() 
+
+cv2.destroyAllWindows()
+
